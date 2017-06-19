@@ -42,3 +42,25 @@
 /Volumes/WorkLoad/Dragon RPG 2/Temp/bin/Debug/Unity.CecilTools.dll
 /Volumes/WorkLoad/Dragon RPG 2/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Volumes/WorkLoad/Dragon RPG 2/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Assembly-CSharp-firstpass.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/obj/Debug/Assembly-CSharp-firstpass.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/obj/Debug/Assembly-CSharp-firstpass.dll.mdb
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEngine.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEditor.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEngine.UI.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEngine.Networking.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEngine.TestRunner.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/nunit.framework.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEngine.Analytics.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEngine.HoloLens.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/UnityEngine.VR.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Mono.Cecil.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Unity.DataContract.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Unity.CecilTools.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Volumes/Macintosh HD/unityprojects/ROZ-RPG-/Temp/bin/Debug/Mono.Cecil.Mdb.dll

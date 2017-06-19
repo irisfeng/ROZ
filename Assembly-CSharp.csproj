@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5739187F-F5AA-F5E0-BC57-AD3DD71E2BDF}</ProjectGuid>
+    <ProjectGuid>{CB531509-5CC5-6C01-4AB4-11568C8821DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,24 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Camera &amp; UI\CameraFollow.cs" />
-     <Compile Include="Assets\Camera &amp; UI\CameraRaycaster.cs" />
-     <Compile Include="Assets\Camera &amp; UI\CursorAffordance.cs" />
-     <Compile Include="Assets\Camera &amp; UI\PlayerHealthBar.cs" />
-     <Compile Include="Assets\Characters\DominantHand.cs" />
-     <Compile Include="Assets\Characters\Enemies\AIZergControl.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\EnemyHealthBar.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\EnemyUI.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\Projectile.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\Zerg.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\ZergAttack.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\ZergHealthBar.cs" />
-     <Compile Include="Assets\Characters\Enemies\Scripts\ZergMove.cs" />
-     <Compile Include="Assets\Characters\Enemies\ZergBehavior.cs" />
-     <Compile Include="Assets\Characters\Player\Player.cs" />
-     <Compile Include="Assets\Characters\Player\PlayerMovement.cs" />
-     <Compile Include="Assets\Characters\Player\weapon\Weapon.cs" />
      <Compile Include="Assets\Controllers\VirtualJoystick.cs" />
      <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
      <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
@@ -71,11 +53,35 @@
      <Compile Include="Assets\UnityChan\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+     <Compile Include="Assets\_CameraUI\CameraFollow.cs" />
+     <Compile Include="Assets\_CameraUI\CameraRaycaster.cs" />
+     <Compile Include="Assets\_Characters\DominantHand.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\AIZergControl.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\Enemy.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\EnemyHealthBar.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\EnemyUI.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\Zerg.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\ZergBehavior.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\ZergHealthBar.cs" />
+     <Compile Include="Assets\_Characters\Enemies\Scripts\ZergMove.cs" />
+     <Compile Include="Assets\_Characters\Player\Player.cs" />
+     <Compile Include="Assets\_Characters\Player\PlayerHealthBar.cs" />
+     <Compile Include="Assets\_Characters\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\_Characters\Special Abilities\Power Attack\PowerAttackBehavior.cs" />
+     <Compile Include="Assets\_Characters\Special Abilities\Power Attack\PowerAttackConfig.cs" />
+     <Compile Include="Assets\_Characters\Special Abilities\SpecialAbility.cs" />
+     <Compile Include="Assets\_Core\GameManager.cs" />
      <Compile Include="Assets\_Core\IDamageable.cs" />
      <Compile Include="Assets\_Core\SpinMe.cs" />
+     <Compile Include="Assets\_Weapon\Enemy\Projectile.cs" />
+     <Compile Include="Assets\_Weapon\Player\ArmedWeapon.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\Plugins\Control-Freak-2\Samples\Demo-CFR\CFR-Demo-Installation-Guide.txt" />
+     <None Include="Assets\Plugins\Control-Freak-2\Shaders\Sprites-SoftLight.shader" />
      <None Include="Assets\UnityChan\license.txt" />
+     <None Include="Assets\Plugins\Control-Freak-2\Control-Freak-2-ReadMe.txt" />
+     <None Include="Assets\Plugins\Control-Freak-2\Shaders\Sprites-Additive.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
@@ -84,11 +90,13 @@
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
      <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
-     <None Include="Assets\Characters\Enemies\Rhino\Sheder\StandardDoubleSided.shader" />
+     <None Include="Assets\_Characters\Enemies\Rhino\Sheder\StandardDoubleSided.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Plugins\Control-Freak-2\Samples\Shared-Assets\Fonts\FH-RedFive WTT\license.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Plugins\Control-Freak-2\Shaders\Sprites-HardLight.shader" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Volumes/Macintosh HD/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -114,7 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{51C57763-D5E3-3F35-5653-7483FCB684D4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{E80D5A4E-5F6D-ABE6-9E35-2FEF8742BEA5}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

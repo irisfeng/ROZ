@@ -2,7 +2,9 @@
 using System.Collections;
 using System;
 using UnityEngine.Assertions;
-using RPG.CameraUI; // TODO consider rewiring
+
+// TODO consider rewiring
+using RPG.CameraUI; 
 using RPG.Weapons;
 using RPG.Core;
 
@@ -10,8 +12,6 @@ namespace RPG.Characters
 {
     public class Player : MonoBehaviour, IDamageable
     {
-
-        [SerializeField] int enemyLayer = 9;
         [SerializeField] float maxHealthPoints = 100f;
         float currentHealthPoints = 100f;
         public float CurrentHP
@@ -19,7 +19,7 @@ namespace RPG.Characters
             get { return currentHealthPoints; }
         }
 
-        [SerializeField] float damagePerHit = 10f;
+		[SerializeField] float baseDamage = 10f;
         [SerializeField] float minTimebetweenAttacks = .5f;
         [SerializeField] float maxAttackRange = 2f;
 
@@ -27,7 +27,7 @@ namespace RPG.Characters
         [SerializeField] AnimatorOverrideController animatorOverrideController;
 
         // Temporarily serializing for debugging
-        [SerializeField] SpecialAbilityConfig ability1;
+        [SerializeField] SpecialAbility[] abilities;
 
         Animator animator;
         //GameObject currentTarget;          
@@ -50,7 +50,7 @@ namespace RPG.Characters
             PutWeaponInHand();
             SetupRuntimeAnimator();
             blood = GetComponentInChildren<ParticleSystem>();
-            ability1.AddComponent(gameObject);
+            abilities[0].AttachComponentTo(gameObject);
         }
 
         public void TakeDamage(float damage)
@@ -100,38 +100,48 @@ namespace RPG.Characters
         private void RegisiterForMouseClick()
         {
             cameraRaycaster = FindObjectOfType<CameraRaycaster>();
-            cameraRaycaster.notifyMouseClickObservers += OnMouseClick;
+			cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy;
         }
 
+
+		void OnMouseOverEnemy(Zerg zerg){
+			if (Input.GetMouseButton (0) && IsTargetInRange (zerg.gameObject)) {
+				AttackTarget (zerg);
+			} else if(Input.GetMouseButtonDown(1)){
+				AttemptSpecialAbility (0, zerg);
+			}	
+		}
 
         // TODO refactor to simple
-        public void OnMouseClick(RaycastHit raycastHit, int layerHit)
-        {
-            if (layerHit == enemyLayer)
-            {
-                var enemy = raycastHit.collider.gameObject;
+//        public void OnMouseClick(RaycastHit raycastHit, int layerHit)
+//        {
+//            if (layerHit == enemyLayer)
+//            {
+//                Zerg enemy = (Zerg)raycastHit.collider.gameObject;
+//
+//                if (IsTargetInRange(enemy))
+//                {
+//                    //AttackTarget(enemy);
+//                    AttemptSpecialAbility(enemy);
+//                }
+//                //currentTarget = enemy;
+//            }
+//        }
 
-                if (IsTargetInRange(enemy))
-                {
-                    //AttackTarget(enemy);
-                    AttemptSpecialAbility1();
-                }
-                //currentTarget = enemy;
-            }
+        private void AttemptSpecialAbility(int abilityIndex, Zerg zerg)
+        {
+            
+			var abilityParams = new AbilityUseParams(zerg, baseDamage);
+			abilities[abilityIndex].Use(abilityParams);
         }
 
-        private void AttemptSpecialAbility1()
+        private void AttackTarget(Zerg zerg)
         {
-            throw new NotImplementedException();
-        }
-
-        private void AttackTarget(GameObject target)
-        {
-            var enemyComponent = target.GetComponent<Zerg>();       // TODO suit zerg and human-enemy ???
+      																 // TODO suit zerg and human-enemy ???
             if (Time.time - lastHitTime > minTimebetweenAttacks)
             {
                 animator.SetTrigger("Attack");  // TODO make const
-                enemyComponent.TakeDamage(damagePerHit);
+				zerg.TakeDamage(baseDamage);
                 lastHitTime = Time.time;
             }
         }
@@ -139,7 +149,7 @@ namespace RPG.Characters
         private bool IsTargetInRange(GameObject target)
         {
             float distanceToTarget = (target.transform.position - transform.position).magnitude;
-            return distanceToTarget <= maxAttackRange;
+			return distanceToTarget <= maxAttackRange;
         }
 
         //private void OnTriggerEnter(Collider other)

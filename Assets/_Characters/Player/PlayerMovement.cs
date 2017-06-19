@@ -17,10 +17,6 @@ namespace RPG.Characters
         //[SerializeField]
         //float attackMoveStopRadius = 5f;
 
-        [SerializeField]
-        const int walkableLayerNumber = 8;
-        [SerializeField]
-        const int enemyLayerNumber = 9;
 
         public VirtualJoystick moveJoystick;
 
@@ -41,30 +37,24 @@ namespace RPG.Characters
             currentDestination = transform.position;
             aiCharacterControl = GetComponent<AICharacterControl>();
             walkTarget = new GameObject("walkTarget");
-
-            cameraRaycaster.notifyMouseClickObservers += ProcessMouseClick;
+		
+			cameraRaycaster.onMouseOverPotentiallyWalkable += OnMouseOverPotentiallyWalkable;
+			cameraRaycaster.onMouseOverEnemy += OnMouseOverEnemy;
         }
 
-        void ProcessMouseClick(RaycastHit raycastHit, int layerHit)
-        {
-            switch (layerHit)
-            {
-                case enemyLayerNumber:
-                    // navigate to enemy
-                    GameObject enemy = raycastHit.collider.gameObject;
-                    aiCharacterControl.SetTarget(enemy.transform);
-                    break;
-                case walkableLayerNumber:
-                    // navigate to point on the ground
-                    walkTarget.transform.position = raycastHit.point;
-                    aiCharacterControl.SetTarget(walkTarget.transform);
-                    break;
-                default:
-                    Debug.LogWarning("Don't know how to handle mouse click for player movement");
-                    return;
-            }
-        }
+		void OnMouseOverPotentiallyWalkable(Vector3 destination){
+			if (Input.GetMouseButton (0)) {
+				walkTarget.transform.position = destination;
+				aiCharacterControl.SetTarget(walkTarget.transform);
+			}
+		}
 
+		void OnMouseOverEnemy(Zerg zerg){
+			if (Input.GetMouseButton (0) || Input.GetMouseButtonDown(1)) {
+				aiCharacterControl.SetTarget(zerg.transform);
+			}
+		}
+			
         // Fixed update is called in sync with physics
         void FixedUpdate()
         {
