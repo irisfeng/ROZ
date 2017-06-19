@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROZ-RPG-.Plugins", "ROZ-RPG-.Plugins.csproj", "{48DFD3D3-4320-B84B-E621-D4ADC1F7B3EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROZ-RPG-", "ROZ-RPG-.csproj", "{803DA8F5-63D7-2B93-87FD-F5BEDF52A3A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROZ-RPG-.Editor.Plugins", "ROZ-RPG-.Editor.Plugins.csproj", "{38AACFD0-2832-57BA-B865-B737EC7A4238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ROZ-RPG-.Editor", "ROZ-RPG-.Editor.csproj", "{9512C633-15CD-B023-5F33-F19B41E93E56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48DFD3D3-4320-B84B-E621-D4ADC1F7B3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DFD3D3-4320-B84B-E621-D4ADC1F7B3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DFD3D3-4320-B84B-E621-D4ADC1F7B3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DFD3D3-4320-B84B-E621-D4ADC1F7B3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{803DA8F5-63D7-2B93-87FD-F5BEDF52A3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803DA8F5-63D7-2B93-87FD-F5BEDF52A3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803DA8F5-63D7-2B93-87FD-F5BEDF52A3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803DA8F5-63D7-2B93-87FD-F5BEDF52A3A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38AACFD0-2832-57BA-B865-B737EC7A4238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38AACFD0-2832-57BA-B865-B737EC7A4238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38AACFD0-2832-57BA-B865-B737EC7A4238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38AACFD0-2832-57BA-B865-B737EC7A4238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9512C633-15CD-B023-5F33-F19B41E93E56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9512C633-15CD-B023-5F33-F19B41E93E56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9512C633-15CD-B023-5F33-F19B41E93E56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9512C633-15CD-B023-5F33-F19B41E93E56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

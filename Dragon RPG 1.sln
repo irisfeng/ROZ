@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon RPG 1.Plugins", "Dragon RPG 1.Plugins.csproj", "{E43940BA-2957-D1D1-F92E-8C6591601F73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon RPG 1", "Dragon RPG 1.csproj", "{27B98A82-F1BE-EECE-9A9C-A3249EDDE6D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon RPG 1.Editor", "Dragon RPG 1.Editor.csproj", "{B36EDCBE-64E9-BB89-97AE-343828D26F01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E43940BA-2957-D1D1-F92E-8C6591601F73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43940BA-2957-D1D1-F92E-8C6591601F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43940BA-2957-D1D1-F92E-8C6591601F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43940BA-2957-D1D1-F92E-8C6591601F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B98A82-F1BE-EECE-9A9C-A3249EDDE6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B98A82-F1BE-EECE-9A9C-A3249EDDE6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B98A82-F1BE-EECE-9A9C-A3249EDDE6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B98A82-F1BE-EECE-9A9C-A3249EDDE6D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B36EDCBE-64E9-BB89-97AE-343828D26F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36EDCBE-64E9-BB89-97AE-343828D26F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36EDCBE-64E9-BB89-97AE-343828D26F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36EDCBE-64E9-BB89-97AE-343828D26F01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

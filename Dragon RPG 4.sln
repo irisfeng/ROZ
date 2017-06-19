@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon RPG 4", "Assembly-CSharp-firstpass.csproj", "{51C57763-D5E3-3F35-5653-7483FCB684D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon RPG 4", "Assembly-CSharp.csproj", "{5739187F-F5AA-F5E0-BC57-AD3DD71E2BDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dragon RPG 4", "Assembly-CSharp-Editor.csproj", "{1E65B3C3-1937-454E-B7FB-B9CFA3017B92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51C57763-D5E3-3F35-5653-7483FCB684D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C57763-D5E3-3F35-5653-7483FCB684D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C57763-D5E3-3F35-5653-7483FCB684D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C57763-D5E3-3F35-5653-7483FCB684D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5739187F-F5AA-F5E0-BC57-AD3DD71E2BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5739187F-F5AA-F5E0-BC57-AD3DD71E2BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5739187F-F5AA-F5E0-BC57-AD3DD71E2BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5739187F-F5AA-F5E0-BC57-AD3DD71E2BDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E65B3C3-1937-454E-B7FB-B9CFA3017B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E65B3C3-1937-454E-B7FB-B9CFA3017B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E65B3C3-1937-454E-B7FB-B9CFA3017B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E65B3C3-1937-454E-B7FB-B9CFA3017B92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

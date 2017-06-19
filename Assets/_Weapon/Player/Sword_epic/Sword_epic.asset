@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f26a5abe23224de4992edf20af2f01e9, type: 3}
+  m_Name: Sword_epic
+  m_EditorClassIdentifier: 
+  gripTransform: {fileID: 4419374315578514, guid: 62dde07b28e2a7242b26590b8d7e0e20,
+    type: 2}
+  weaponPrefab: {fileID: 1889749251168648, guid: 78390e8c0c848504dad35555e4124800,
+    type: 2}
+  attackAnimation: {fileID: 7400000, guid: 65ab56ec63abae340b7646d2ed24c864, type: 3}
